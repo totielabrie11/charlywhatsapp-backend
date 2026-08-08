@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "isolatedModules": true,
+    "lib": ["es2022"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "@workspace/db": ["./packages/db/src/index.ts"],
+      "@workspace/db/schema": ["./packages/db/src/schema/index.ts"],
+      "@workspace/api-zod": ["./packages/api-zod/src/index.ts"]
+    }
+  },
+  "include": ["src", "packages/db/src", "packages/api-zod/src"]
+}
